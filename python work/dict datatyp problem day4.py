@@ -1,0 +1,22 @@
+name=input("enter all emp name= ").split(",")
+exp=input("enter all emp exp= ").split(",")
+tech=input("enter all emp tech= ").split(",")
+email=input("enter all emp email= ").split(",")
+no=input("enter all emp number = ").split(",")
+
+all_list= list(zip( name,exp, tech,email,no))
+list=["name","exp","tech","email","no"]
+d1=dict.fromkeys(list)
+#d1=dict.fromkeys(all_list)
+print(d1)
+print(dict(zip(all_list,list)))
+# name_email=dict(zip(name,email))
+# name_tech=dict(zip(name,tech))
+# name_exp=dict(zip(name,exp))
+# name_no=dict(zip(name,no))
+# name_email=dict.fromkeys(name,email)
+# print(name_email)
+# print(name_tech)
+# print(name_exp)
+# print(name_no)
+
