@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <form class="form">
+      <div class="pageTitle title">A click away!!</div>
+      <div class="secondaryTitle title">Please fill this form for feedback.</div>
+      <input type="text" class="name formEntry" placeholder="Name" / required>
+      <input type="text" class="email formEntry" placeholder="Email"/ required>
+      <textarea class="message formEntry" placeholder="Message" required></textarea>
+      <input type="checkbox" class="termsConditions" value="Term" required>
+      <label style="color: grey" for="terms"> I Accept the <span style="color: #0e3721">Terms of Use</span> & <span style="color: #0e3721">Privacy Policy</span>.</label><br>
+      <button class="submit formEntry" onclick="thanks()">Submit</button>
+    </form>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
